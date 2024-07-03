@@ -8,7 +8,6 @@
 	--soft-blue: hsl(200.14deg 100% 30%);
 	--soft-blue-hover: hsl(200.14deg 100% 40%);
 	--soft-blue-active: hsl(200.14deg 100% 50%);
-	--sky-blue: hsl(200.26deg 50.33% 30%);
 	--sky-blue: hsl(200, 68%, 31%);
 	--aqua-green: hsl(180, 85%, 92%);
 
@@ -60,7 +59,6 @@ body {
 	margin: 0 auto;
 	max-width: var(--max-width);
 	min-height: 100dvh;
-	padding: 16px;
 	line-height: 1.5;
 	color: var(--aqua-green);
 	background-color: var(--dark-blue);
@@ -86,6 +84,14 @@ p {
 	text-wrap: pretty;
 	font-size: var(--font-size-md);
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+main {
+	padding: 32px 16px;
+}
 
 @media (prefers-color-scheme: dark) {
 	html {
@@ -94,7 +100,7 @@ p {
 }
 
 @media (width >= 768px) {
-	body {
+	main {
 		padding: 32px;
 	}
 }

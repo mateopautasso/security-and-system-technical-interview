@@ -1,9 +1,11 @@
 import style from './PageTitle.module.css'
 
-interface PageTitleProps {
-	label: string
-}
+interface PageTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {}
 
-export function PageTitle({ label }: PageTitleProps) {
-	return <h1 className={style.h1}>{label}</h1>
+export function PageTitle({ ...props }: PageTitleProps) {
+	return (
+		<h1 className={style.h1} {...props}>
+			{props.children}
+		</h1>
+	)
 }

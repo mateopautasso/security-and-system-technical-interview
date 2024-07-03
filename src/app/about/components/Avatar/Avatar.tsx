@@ -1,5 +1,6 @@
 import styles from './Avatar.module.css'
 import Image from 'next/image'
+import { AVATAR_BLUR } from '@/utils/mock/user.mock'
 
 interface AvatarProps {
 	src: string
@@ -7,5 +8,5 @@ interface AvatarProps {
 }
 
 export function Avatar({ src, alt }: AvatarProps) {
-	return <Image width={75} height={75} src={src} alt={alt} className={styles.image}></Image>
+	return <Image fill src={src} alt={alt} placeholder='blur' blurDataURL={AVATAR_BLUR} className={styles.image} />
 }

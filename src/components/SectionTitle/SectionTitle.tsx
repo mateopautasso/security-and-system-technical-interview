@@ -1,9 +1,12 @@
+import React from 'react'
 import styles from './SectionTitle.module.css'
 
-interface SectionTitleProps {
-	label: string
-}
+interface SectionTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {}
 
-export function SectionTitle({ label }: SectionTitleProps) {
-	return <h2 className={styles.h2}>{label}</h2>
+export function SectionTitle({ ...props }: SectionTitleProps) {
+	return (
+		<h2 className={styles.h2} {...props}>
+			{props.children}
+		</h2>
+	)
 }

@@ -1,25 +1,21 @@
 import { SectionTitle, PageTitle, PageLink, Chip, ChipList, Input, TextArea, PrimaryButton, Label } from '@/components'
-import { Avatar, Name, Username } from './components'
-import { USER_MOCK } from './mock/user.mock'
-import { Activity } from '@geist-ui/icons'
-import styles from './about.module.css'
+import { Avatar, Name, Username, ListInterest } from './components'
+import { USER_MOCK } from '@/utils/mock/user.mock'
 import { Form } from '@/components/Form/Form'
+import styles from './about.module.css'
 
 export default function About() {
 	return (
 		<main>
 			<header className={styles.header}>
-				<PageTitle label='Sobre mí' />
+				<PageTitle>Sobre mí</PageTitle>
 				<PageLink label='INICIO' href='/' />
 			</header>
 
 			<article className={styles.article}>
-				<header className={styles.articleHeader}>
-					<figure className={styles.figure}>
-						<Avatar
-							src={'https://lh3.googleusercontent.com/a/ACg8ocL44MPyt5GGQHkguoAjR9F1c7o3XeI1KlbocpcY5-n34hQZnZYl=s288-c-no'}
-							alt={`Profile picture of ${USER_MOCK.username}`}
-						/>
+				<header>
+					<figure>
+						<Avatar src={'https://i.imgur.com/rYiuYrA.png'} alt={`Profile picture of ${USER_MOCK.username}`} />
 					</figure>
 					<div className={styles.articleHeaderInfo}>
 						<Name firstName={USER_MOCK.firstName} lastName={USER_MOCK.lastName} />
@@ -27,38 +23,29 @@ export default function About() {
 					</div>
 				</header>
 
-				<section className={styles.section}>
-					<SectionTitle label='¿Quién soy?' />
+				<section>
+					<SectionTitle>¿Quién soy?</SectionTitle>
 					<p>{USER_MOCK.descripton}</p>
 				</section>
 
-				<section className={styles.section}>
-					<SectionTitle label='Intereses' />
-					<ChipList>
-						{USER_MOCK.interests.map((interest) => (
-							<li key={interest.title}>
-								<Chip label={interest.title} icon={<Activity />} />
-							</li>
-						))}
-					</ChipList>
+				<section>
+					<SectionTitle>Intereses</SectionTitle>
+					<ListInterest />
 				</section>
 
-				<section className={styles.section}>
-					<SectionTitle label='Contacto' />
+				<section>
+					<SectionTitle>Contacto</SectionTitle>
 					<Form action=''>
 						<Label>
 							Nombre <Input type='text' />
 						</Label>
-
 						<Label>
 							Email <Input type='text' />
 						</Label>
-
 						<Label>
 							Mensaje <TextArea />
 						</Label>
-
-						<PrimaryButton>Enviar</PrimaryButton>
+						<PrimaryButton>Enviar mensaje</PrimaryButton>
 					</Form>
 				</section>
 			</article>
