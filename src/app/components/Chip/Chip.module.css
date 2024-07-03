@@ -1,0 +1,8 @@
+.chip {
+	width: fit-content;
+	border-radius: var(--border-radius-lg);
+	display: flex;
+	gap: 8px;
+	padding: 8px 10px;
+	background-color: var(--sky-blue);
+}
