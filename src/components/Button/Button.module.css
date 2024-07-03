@@ -1,0 +1,19 @@
+.button {
+	cursor: pointer;
+	border: none;
+	padding: 4px 6px;
+	border-radius: var(--border-radius-sm);
+	font-size: var(--font-size-sm);
+	outline: none;
+	transition: all var(--transition-fast);
+}
+
+.primaryButton {
+	background-color: var(--soft-blue);
+}
+.primaryButton:hover {
+	background-color: var(--soft-blue-hover);
+}
+.primaryButton:active {
+	background-color: var(--soft-blue-active);
+}

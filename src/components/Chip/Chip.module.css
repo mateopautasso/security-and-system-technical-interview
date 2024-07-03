@@ -6,3 +6,9 @@
 	padding: 8px 10px;
 	background-color: var(--sky-blue);
 }
+
+.chipList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}

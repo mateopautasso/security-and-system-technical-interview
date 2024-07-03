@@ -4,9 +4,12 @@
 	--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace',
 		'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-	--dark-blue: hsl(210.97deg 100% 6.08%);
-	--soft-blue: hsl(200.14deg 100% 28.04%);
+	--dark-blue: hsl(213, 100%, 5%);
+	--soft-blue: hsl(200.14deg 100% 30%);
+	--soft-blue-hover: hsl(200.14deg 100% 40%);
+	--soft-blue-active: hsl(200.14deg 100% 50%);
 	--sky-blue: hsl(200.26deg 50.33% 30%);
+	--sky-blue: hsl(200, 68%, 31%);
 	--aqua-green: hsl(180, 85%, 92%);
 
 	--border-radius-sm: 4px;
@@ -22,6 +25,10 @@
 	--font-weight-sm: 400;
 	--font-weight-md: 600;
 	--font-weight-lg: 800;
+
+	--transition-fast: 100ms;
+	--transition-normal: 250ms;
+	--transition-slow: 400ms;
 }
 
 * {

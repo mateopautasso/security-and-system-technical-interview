@@ -1,16 +1,17 @@
-import { SectionTitle, PageTitle, PageLink, Chip } from '@/components'
+import { SectionTitle, PageTitle, PageLink, Chip, ChipList, Input, TextArea, PrimaryButton, Label } from '@/components'
 import { Avatar, Name, Username } from './components'
 import { USER_MOCK } from './mock/user.mock'
 import { Activity } from '@geist-ui/icons'
 import styles from './about.module.css'
+import { Form } from '@/components/Form/Form'
 
 export default function About() {
 	return (
 		<main>
-			{/* <header className={styles.header}>
+			<header className={styles.header}>
 				<PageTitle label='Sobre mí' />
 				<PageLink label='INICIO' href='/' />
-			</header> */}
+			</header>
 
 			<article className={styles.article}>
 				<header className={styles.articleHeader}>
@@ -33,13 +34,32 @@ export default function About() {
 
 				<section className={styles.section}>
 					<SectionTitle label='Intereses' />
-					<ul className={styles.ul}>
+					<ChipList>
 						{USER_MOCK.interests.map((interest) => (
 							<li key={interest.title}>
 								<Chip label={interest.title} icon={<Activity />} />
 							</li>
 						))}
-					</ul>
+					</ChipList>
+				</section>
+
+				<section className={styles.section}>
+					<SectionTitle label='Contacto' />
+					<Form action=''>
+						<Label>
+							Nombre <Input type='text' />
+						</Label>
+
+						<Label>
+							Email <Input type='text' />
+						</Label>
+
+						<Label>
+							Mensaje <TextArea />
+						</Label>
+
+						<PrimaryButton>Enviar</PrimaryButton>
+					</Form>
 				</section>
 			</article>
 		</main>
