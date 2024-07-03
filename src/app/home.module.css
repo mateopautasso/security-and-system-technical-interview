@@ -36,6 +36,7 @@
 	border-radius: var(--border-radius-md);
 	padding: 4px 8px;
 	background-color: var(--soft-blue);
+	transition: all var(--transition-fast);
 }
 .link:hover {
 	background-color: var(--soft-blue-hover);

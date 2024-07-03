@@ -8,7 +8,6 @@ export default function Home() {
 			<SectionTitle style={{ textDecoration: 'underline', textAlign: 'center', lineHeight: '1.4' }}>
 				Prueba Técnica para Security and System
 			</SectionTitle>
-
 			<section>
 				<p>
 					<span>Candidato:</span> Mateo Pautasso

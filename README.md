@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto para entrevista técnica
 
-## Getting Started
+Desarrolle este proyecto utilizando Next.js 14 como parte de una prueba técnica para la empresa Security And System.  
+El sitio web consta de dos secciones:
 
-First, run the development server:
+1. **Home**: La página principal del sitio.
+2. **About**: Una sección que presenta información de un usuario de ejemplo utilizando datos ficticios. Esta sección incluye:
 
-```bash
+- Una cabecera con el nombre del usuario y una imagen de perfil.
+- Una sección "Sobre mí" con una breve descripción del usuario.
+- Una lista de intereses del usuario.
+- Un formulario de contacto con campos para nombre, email y mensaje.
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local:
+   ```sh
+   git clone https://github.com/mateopautasso/security-and-system-technical-interview.git
+   ```
+2. Navega al directorio del proyecto:
+   ```sh
+   cd tu-proyecto
+   ```
+3. Instala las dependencias:
+
+   ```sh
+   # Con npm
+   npm install
+
+   # Con yarn
+   yarn install
+
+   # Con pnpm
+   pnpm install
+
+   # Con bun
+   bun install
+   ```
+
+## Ejecutar el Proyecto
+
+Para iniciar el proyecto en modo desarrollo, usa uno de los siguientes comandos:
+
+```sh
+# Con npm
 npm run dev
-# or
+
+# Con yarn
 yarn dev
-# or
+
+# Con pnpm
 pnpm dev
-# or
+
+# Con bun
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Una vez que el proyecto esté en ejecución, dirígete a la ruta indicada en la consola.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Páginas Principales
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Home**: Página principal de la aplicación, accesible en `/`.
+- **About Me**: Sección "About Me", accesible en `/about`.
