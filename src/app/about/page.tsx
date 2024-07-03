@@ -1,4 +1,4 @@
-import { SectionTitle, PageTitle, PageLink, Chip } from '../components'
+import { SectionTitle, PageTitle, PageLink, Chip } from '@/components'
 import { Avatar, Name, Username } from './components'
 import { USER_MOCK } from './mock/user.mock'
 import { Activity } from '@geist-ui/icons'
