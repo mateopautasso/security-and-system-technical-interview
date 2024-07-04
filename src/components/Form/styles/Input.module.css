@@ -9,6 +9,12 @@
 	font-size: var(--font-size-sm);
 	font-weight: var(--font-weight-sm);
 }
+.input[datatype='error'],
+.textArea[datatype='error'],
+.input[datatype='error']:focus,
+.textArea[datatype='error']:focus {
+	outline: 1px solid var(--error-red);
+}
 
 .textArea {
 	min-height: 64px;
@@ -19,4 +25,11 @@
 .input:focus,
 .textArea:focus {
 	outline-color: var(--soft-blue-active);
+}
+
+.errorField {
+	color: var(--error-red);
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-sm);
+	line-height: 1;
 }

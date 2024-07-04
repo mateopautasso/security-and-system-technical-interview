@@ -10,10 +10,15 @@
 	--soft-blue-active: hsl(200.14deg 100% 50%);
 	--sky-blue: hsl(200, 68%, 31%);
 	--aqua-green: hsl(180, 85%, 92%);
+	--error-red: hsl(0, 75%, 50%);
 
 	--border-radius-sm: 4px;
 	--border-radius-md: 8px;
 	--border-radius-lg: 12px;
+
+	--border-width-sm: 1px;
+	--border-width-md: 2px;
+	--border-width-lg: 3px;
 
 	--font-size-xs: clamp(12px, 2.5vw, 14px);
 	--font-size-sm: clamp(14px, 3vw, 16px);
@@ -25,20 +30,10 @@
 	--font-weight-md: 600;
 	--font-weight-lg: 800;
 
-	--transition-fast: 100ms;
-	--transition-normal: 250ms;
-	--transition-slow: 400ms;
-}
-
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-html,
-body {
-	overflow-x: hidden;
+	--transition-fast: 75ms;
+	--transition-normal: 150ms;
+	--transition-slow: 300ms;
+	--transition-very-slow: 500ms;
 }
 
 /* Normalize */
@@ -90,7 +85,7 @@ a {
 }
 
 main {
-	padding: 32px 16px;
+	padding: 32px 24px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,18 +1,24 @@
-export const USER_MOCK = {
+import { UserInterface } from '@/models/user.model'
+
+export const USER_MOCK: UserInterface = {
 	firstName: 'Mateo',
 	lastName: 'Pautasso',
 	username: 'mateopautasso',
 	avatar: '/src/assets/images/avatar.webp',
 	email: 'mateopautassodev@gmail.com',
-	descripton:
+	about:
 		'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ut doloribus dicta voluptatem assumenda architecto aperiam a molestiae iusto inventore deleniti nobis esse rerum repellendus debitis quis alias, sequi quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptas obcaecati pariatur similique culpa nihil reprehenderit in cumque tenetur aliquam ad. Beatae cum ullam enim, ut delectus mollitia fugit itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta unde maxime quibusdam, accusamus ex natus dolor voluptates hic magnam, in, reiciendis pariatur nam dicta illo aperiam voluptatibus non eligendi tempora.',
-	interests: [
-		{ title: 'Desarrollo de Software', icon: '' },
-		{ title: 'Desarrollo Web', icon: '' },
-		{ title: 'Películas', icon: '' },
-		{ title: 'Literatura', icon: '' },
-		{ title: 'Música', icon: '' },
-	],
+	interest: {
+		description:
+			'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A possimus aut, ipsa ipsum placeat pariatur laudantium non voluptates id esse modi fuga aperiam ab hic? Nostrum repellendus ipsum modi nobis. Lorem, ipsum dolor sit amet consectetur adipisicingelit. Harum deleniti asperiores nam aperiam, necessitatibus accusamus ducimus temporibus totam molestiae nihil est teneturullam. Nam consequuntur dolores sapiente dolorem rerum.',
+		chips: [
+			{ title: 'Desarrollo de Software', icon: '' },
+			{ title: 'Desarrollo Web', icon: '' },
+			{ title: 'Películas', icon: '' },
+			{ title: 'Literatura', icon: '' },
+			{ title: 'Música', icon: '' },
+		],
+	},
 }
 
 export const AVATAR_BLUR =

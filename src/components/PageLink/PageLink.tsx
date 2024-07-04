@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import style from './PageLink.module.css'
+import React from 'react'
 
 interface PageLinkProps {
-	label: string
+	children: React.ReactNode
 	href: string
 }
 
-export function PageLink({ label, href }: PageLinkProps) {
+export function PageLink({ children, href }: PageLinkProps) {
 	return (
 		<Link href={href} className={style.link}>
-			{label}
+			{children}
 		</Link>
 	)
 }

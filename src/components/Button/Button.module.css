@@ -1,12 +1,19 @@
 .button {
 	cursor: pointer;
 	border: none;
-	padding: 4px 6px;
+	padding: 4px 8px;
 	border-radius: var(--border-radius-sm);
 	font-size: var(--font-size-sm);
 	font-weight: var(--font-weight-md);
 	outline: none;
 	transition: all var(--transition-fast);
+}
+.button[datatype='load'] {
+	opacity: 0.5;
+}
+
+.button:disabled {
+	cursor: default;
 }
 
 .primaryButton {
