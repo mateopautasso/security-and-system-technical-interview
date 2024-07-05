@@ -5,6 +5,8 @@
 	gap: 8px;
 	padding: 8px 10px;
 	background-color: var(--sky-blue);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-md);
 }
 
 .chipList {

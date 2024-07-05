@@ -5,10 +5,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	load?: boolean
 }
 
-export function PrimaryButton({ ...props }: ButtonProps) {
+export function PrimaryButton({ load, ...props }: ButtonProps) {
 	return (
-		<button className={`${styles.button} ${styles.primaryButton}`} datatype={props.load ? 'load' : ''} {...props}>
-			{props.load ? <SmallLoader /> : props.children}
+		<button className={`${styles.button} ${styles.primaryButton}`} data-load={load} {...props}>
+			{load ? <SmallLoader /> : props.children}
 		</button>
 	)
 }

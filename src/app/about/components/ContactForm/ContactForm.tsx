@@ -4,6 +4,7 @@ import { Form, Input, Label, ErrorField, PrimaryButton, TextArea } from '@/compo
 import { contactFormReducer, initialState, ActionTypes } from './contactForm.reducer'
 import { FieldErrorMessages } from '@/models/form.model'
 import styles from './ContactForm.module.css'
+
 type EventHandleChange = React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
 
 export function ContactForm() {

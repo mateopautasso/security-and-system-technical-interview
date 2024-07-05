@@ -1,6 +1,6 @@
 .link {
 	line-height: 1;
-	color: var(--aqua-green);
+	color: inherit;
 	text-decoration: none;
 }
 .link:hover {

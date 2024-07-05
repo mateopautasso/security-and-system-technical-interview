@@ -18,7 +18,7 @@
 	padding: 12px;
 	gap: 12px;
 	border-radius: var(--border-radius-md);
-	background-color: var(--sky-blue);
+	background: linear-gradient(to right bottom, #003980, #003f8c, #004499, #004aa6, #0050b3);
 }
 
 .article figure {

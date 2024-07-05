@@ -31,10 +31,10 @@
 }
 
 .link {
+	padding: 4px 8px;
+	border-radius: var(--border-radius-sm);
 	font-size: var(--font-size-sm);
 	font-weight: var(--font-weight-md);
-	border-radius: var(--border-radius-md);
-	padding: 4px 8px;
 	background-color: var(--soft-blue);
 	transition: all var(--transition-fast);
 }

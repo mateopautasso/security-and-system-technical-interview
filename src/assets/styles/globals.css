@@ -5,12 +5,14 @@
 		'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
 	--dark-blue: hsl(213, 100%, 5%);
-	--dark-blue-skeleton: hsl(215, 77%, 14%);
-	--soft-blue: hsl(200.14deg 100% 30%);
+	--dark-soft-blue: hsl(213, 100%, 10%);
+	--soft-blue: hsl(213, 100%, 30%);
+	--soft-blue-hover: hsl(213, 100%, 40%);
+	--soft-blue-active: hsl(213, 100%, 50%);
+	/* --soft-blue: hsl(200.14deg 100% 30%);
 	--soft-blue-hover: hsl(200.14deg 100% 40%);
-	--soft-blue-active: hsl(200.14deg 100% 50%);
-	--sky-blue: hsl(200, 68%, 31%);
-	--aqua-green: hsl(180, 85%, 92%);
+	--soft-blue-active: hsl(200.14deg 100% 50%); */
+	--sky-blue: hsl(210, 70%, 30%);
 	--error-red: hsl(0, 75%, 50%);
 
 	--border-radius-sm: 4px;
@@ -58,7 +60,6 @@ body {
 	max-width: var(--max-width);
 	min-height: 100dvh;
 	line-height: 1.5;
-	color: var(--aqua-green);
 	background-color: var(--dark-blue);
 }
 img,
