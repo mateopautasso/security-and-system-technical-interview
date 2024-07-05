@@ -1,6 +1,10 @@
 import { Loader } from '@geist-ui/icons'
 import styles from './Loader.module.css'
+
 export function SmallLoader() {
-	return <Loader className={styles.primaryLoader} />
+	return <Loader className={`${styles.primaryLoader} ${styles.smallLoader}`} />
 }
-export default Loader
+
+export function BigLoader() {
+	return <Loader className={`${styles.primaryLoader} ${styles.bigLoader}`} />
+}

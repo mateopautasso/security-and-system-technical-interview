@@ -1,5 +1,5 @@
 import { Avatar, Name, Username, ListInterest, ContactForm } from './components'
-import { SectionTitle, PageLink } from '@/components'
+import { SectionTitle } from '@/components'
 import { USER_MOCK } from '@/utils/mock/user.mock'
 import styles from './about.module.css'
 

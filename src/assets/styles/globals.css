@@ -5,6 +5,7 @@
 		'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
 	--dark-blue: hsl(213, 100%, 5%);
+	--dark-blue-skeleton: hsl(215, 77%, 14%);
 	--soft-blue: hsl(200.14deg 100% 30%);
 	--soft-blue-hover: hsl(200.14deg 100% 40%);
 	--soft-blue-active: hsl(200.14deg 100% 50%);
@@ -53,6 +54,7 @@ select {
 }
 body {
 	margin: 0 auto;
+	padding-block: 16px;
 	max-width: var(--max-width);
 	min-height: 100dvh;
 	line-height: 1.5;
@@ -86,7 +88,7 @@ a {
 }
 
 main {
-	padding: 32px 24px;
+	padding-inline: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,7 +98,10 @@ main {
 }
 
 @media (width >= 768px) {
+	body {
+		padding-block: 32px;
+	}
 	main {
-		padding: 32px;
+		padding-inline: 32px;
 	}
 }

@@ -10,3 +10,11 @@
 .primaryLoader {
 	animation: rotateLoader linear infinite both var(--transition-loader);
 }
+
+.smallLoader {
+}
+
+.bigLoader {
+	width: 75px;
+	height: auto;
+}
