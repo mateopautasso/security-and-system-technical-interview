@@ -1,0 +1,12 @@
+@keyframes rotateLoader {
+	from {
+		rotate: 0deg;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
+
+.primaryLoader {
+	animation: rotateLoader linear infinite both var(--transition-loader);
+}

@@ -34,6 +34,7 @@
 	--transition-normal: 150ms;
 	--transition-slow: 300ms;
 	--transition-very-slow: 500ms;
+	--transition-loader: 1s;
 }
 
 /* Normalize */
